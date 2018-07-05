@@ -7,7 +7,7 @@ Made specialy for 42 school or people on Mac OS (Not tested on Windows) who's wo
 
 ## Usage
 
-### How it works?
+**How it works?**
 
 Move the Dockerfile and all the shell scripts on your project directory. The Dockerfile will copy all the files in the linux container and, depending on your choices, compile, use valgrind, or just open a shell.
 
@@ -19,11 +19,9 @@ Build the image with the shell script **build.sh**
 
 You can use the **run.sh** script by uncomment the good line or just copy and past the following commands.
 
-**First! What do you want?**
+#### First! What do you want?
 
-******************************
-
-#### Just access the shell of the container**
+#### Just access the shell of the container
 
 If you just want to access the container shell for do your tests manually, uncomment on the run.sh script or copy this command :
 
