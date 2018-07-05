@@ -1,34 +1,37 @@
-# **Docker test for C program**
+# Docker test for C program
 
-## **Description**
+## Description
 A Dockerfile for build a ready linux container for testing a C program with on linux veryquickly.
 
 Made specialy for 42 school or people on Mac OS (Not tested on Windows) who's working on C code and want to compile and test it on linux easily. With this container, you'll be able to test, compile, or use valgrind with your C code.
 
-****************************
-
-## **Usage**
+## Usage
 
 ### How it works?
 
-Move the Dockerfile and all the shell scripts on your project directory. The Dockefile will copy all the files in the linux container and, depending on your choices, compile, use valgrind, or just open a shell.
+Move the Dockerfile and all the shell scripts on your project directory. The Dockerfile will copy all the files in the linux container and, depending on your choices, compile, use valgrind, or just open a shell.
 
 ### Build
 
-Build the image with the shell script "build.sh"
+Build the image with the shell script **build.sh**
 
 ### Run
 
-You can use the run.sh script by uncomment the good line or just copy and past the following commands.
+You can use the **run.sh** script by uncomment the good line or just copy and past the following commands.
 
-First, what do you want?
+**First! What do you want?**
 
-**Just access the shell of the container**
+******************************
+
+#### Just access the shell of the container**
 
 If you just want to access the container shell for do your tests manually, uncomment on the run.sh script or copy this command :
 
 `docker run --name c_test -ti --rm nirae/c_linux_valgrind bash`
 
+******************************
+
+#### More
 
 For the others cases, there is two environment variables :
 
