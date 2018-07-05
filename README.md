@@ -1,28 +1,23 @@
 # **Docker test for C program**
 
-### **Description**
+## **Description**
 A Dockerfile for build a ready linux container for testing a C program with on linux veryquickly.
 
 Made specialy for 42 school or people on Mac OS (Not tested on Windows) who's working on C code and want to compile and test it on linux easily. With this container, you'll be able to test, compile, or use valgrind with your C code.
 
-### **Shell scripts**
-To automate the operations with docker, you can use the following scripts :
+****************************
 
--
--
--
+## **Usage**
 
-### **Usage**
-
-#### How it works?
+### How it works?
 
 Move the Dockerfile and all the shell scripts on your project directory. The Dockefile will copy all the files in the linux container and, depending on your choices, compile, use valgrind, or just open a shell.
 
-#### Build
+### Build
 
 Build the image with the shell script "build.sh"
 
-#### Run
+### Run
 
 You can use the run.sh script by uncomment the good line or just copy and past the following commands.
 
