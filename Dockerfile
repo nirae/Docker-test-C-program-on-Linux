@@ -1,6 +1,6 @@
-FROM ubuntu:16.04
+FROM debian:jessie64
 
-MAINTAINER ndubouil
+MAINTAINER nirae
 
 RUN apt-get -y update
 
