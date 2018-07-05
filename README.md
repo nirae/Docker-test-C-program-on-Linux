@@ -17,9 +17,7 @@ Build the image with the shell script **build.sh**
 
 ### Run
 
-You can use the **run.sh** script by uncomment the good line or just copy and past the following commands.
-
-#### First! What do you want?
+**First! What do you want?**
 
 #### Just access the shell of the container
 
@@ -31,14 +29,14 @@ If you just want to access the container shell for do your tests manually, uncom
 
 #### More
 
-For the others cases, there is two environment variables :
-
-* MAKEFILE_DIR : The directory that contains the Makefile to compile. By default : `.`
-* EXE : The path of the executable generate by the Makefile. By default : `.`
-
-You will be set these variables on the docker run command with the option -e "VARIABLE=blabla"
-
-**Please read the run_script.sh comments!**
+> For the others cases, there is two environment variables :
+>
+> * MAKEFILE_DIR : The directory that contains the Makefile to compile. By default : `.`
+> * EXE : The path of the executable generate by the Makefile. By default : `.`
+>
+> You will be set these variables on the docker run command with the option -e "VARIABLE=blabla"
+>
+> **Please read the run_script.sh comments!**
 
 **Compile and execute my program**
 
@@ -48,8 +46,10 @@ If you want to compile and execute your program on the container, uncomment the 
 
 If you want to compile and test with valgrind your program, uncomment the make and valgrind line in the run_script.sh. 
 
-After the configuration of the command you need, you can run the container. Uncomment on the run.sh or copy the command :
+**After the configuration** of the command you need, you can run the container. Uncomment on the run.sh or copy the command :
 
 `docker run --name c_test -ti --rm -e "EXE=./my_exec" -e "MAKEFILE_DIR=test" nirae/c_linux_valgrind`
 
 If the Makefile directory is `.` you don't need to set the MAKEFILE_DIR variable.
+
+Enjoy! :smile:
