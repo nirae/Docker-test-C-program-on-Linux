@@ -4,4 +4,4 @@
 # Docker build command
 #
 
-docker build -t nirae/c_linux_valgrind .
+docker build -t nirae/test_c_on_linux .

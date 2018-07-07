@@ -1,4 +1,4 @@
-# **Docker test for C program**
+# **Docker test for C program on a Linux Container**
 
 ### **Description**
 A Dockerfile for build a ready linux container for testing a C program with on linux veryquickly.
@@ -32,7 +32,7 @@ First, what do you want?
 
 If you just want to access the container shell for do your tests manually, uncomment on the run.sh script or copy this command :
 
-`docker run --name c_test -ti --rm nirae/c_linux_valgrind bash`
+`docker run --name c_test -ti --rm nirae/test_c_on_linux bash`
 
 
 For the others cases, there is two environment variables :
@@ -54,6 +54,6 @@ If you want to compile and test with valgrind your program, uncomment the make a
 
 After the configuration of the command you need, you can run the container. Uncomment on the run.sh or copy the command :
 
-`docker run --name c_test -ti --rm -e "EXE=./my_exec" -e "MAKEFILE_DIR=test" nirae/c_linux_valgrind`
+`docker run --name c_test -ti --rm -e "EXE=./my_exec" -e "MAKEFILE_DIR=test" nirae/test_c_on_linux`
 
 If the Makefile directory is `.` you don't need to set the MAKEFILE_DIR variable.
