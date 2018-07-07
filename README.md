@@ -23,7 +23,7 @@ Build the image with the shell script **build.sh**
 
 If you just want to access the container shell for do your tests manually, uncomment on the run.sh script or copy this command :
 
-`docker run --name c_test -ti --rm nirae/test_c_on_linux bash`
+`docker run --name c_test -ti --rm test_c_on_linux bash`
 
 ******************************
 
@@ -48,7 +48,7 @@ If you want to compile and test with valgrind your program, uncomment the make a
 
 **After the configuration** of the command you need, you can run the container. Uncomment on the run.sh or copy the command :
 
-`docker run --name c_test -ti --rm -e "EXE=./my_exec" -e "MAKEFILE_DIR=test" nirae/test_c_on_linux`
+`docker run --name c_test -ti --rm -e "EXE=./my_exec" -e "MAKEFILE_DIR=test" test_c_on_linux`
 
 If the Makefile directory is `.` you don't need to set the MAKEFILE_DIR variable.
 

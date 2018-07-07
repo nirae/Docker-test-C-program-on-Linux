@@ -4,4 +4,4 @@
 # Docker build command
 #
 
-docker build -t nirae/test_c_on_linux .
+docker build -t test_c_on_linux .
